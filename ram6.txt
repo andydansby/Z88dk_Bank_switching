@@ -1,0 +1,14 @@
+Object  file ram6.o at $0000: Z80RMF18
+  Name: RAM6
+  CPU:  z80 
+  Section "": 0 bytes
+  Section bss_compiler: 0 bytes
+  Section IGNORE: 0 bytes
+  Section code_crt_init: 0 bytes
+  Section code_home: 0 bytes
+  Section code_compiler: 0 bytes
+  Section BANK_06: 278 bytes
+  Symbols:
+    G A $0000: _RAM6_add_routine (section BANK_06) (file ram6.c:255)
+    G A $0115: _ram6_end (section BANK_06) (file ram6Z.asm:36)
+    G A $0019: _screen6 (section BANK_06) (file ram6Z.asm:31)
