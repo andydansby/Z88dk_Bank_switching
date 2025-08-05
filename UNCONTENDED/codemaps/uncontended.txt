@@ -1,0 +1,54 @@
+Object  file uncontended.o at $0000: Z80RMF18
+  Name: uncontended
+  CPU:  z80 
+  Section "": 0 bytes
+  Section bss_compiler: 0 bytes
+  Section IGNORE: 0 bytes
+  Section code_crt_init: 0 bytes
+  Section code_home: 0 bytes
+  Section code_compiler: 179 bytes
+  Section data_compiler: 6 bytes
+  Section IM2_VECTOR_PLACEMENT: 325 bytes
+  Section code_user: 138 bytes
+  Section rodata_user: 1 bytes
+  Section smc_user: 0 bytes
+  Section data_user: 0 bytes
+  Section bss_user: 1 bytes
+  Symbols:
+    G = $0000: _checkBoundries (section code_compiler) (file uncontended.c:733)
+    G A $0011: _main (section code_compiler) (file uncontended.c:754)
+    G A $0000: _pause (section code_compiler) (file uncontended.c:737)
+    G A $0002: _copy_memory_destination (section data_compiler) (file uncontended.c:825)
+    G A $0004: _copy_memory_size (section data_compiler) (file uncontended.c:827)
+    G A $0000: _copy_memory_source (section data_compiler) (file uncontended.c:823)
+    G A $0000: _IM2_PUSH_POP (section IM2_VECTOR_PLACEMENT) (file im2.asm:28)
+    G A $0043: _IM2_VECTOR (section IM2_VECTOR_PLACEMENT) (file im2.asm:109)
+    G A $0022: _SETUP_IM2 (section IM2_VECTOR_PLACEMENT) (file im2.asm:67)
+    G A $0063: _attribute_address (section code_user) (file uncontended.asm:57)
+    G A $0062: _attribute_color (section code_user) (file uncontended.asm:47)
+    G A $0066: _attribute_height (section code_user) (file uncontended.asm:64)
+    G A $0065: _attribute_width (section code_user) (file uncontended.asm:62)
+    G A $007A: _bank_switch (section code_user) (file uncontended.asm:91)
+    G A $004F: _border_Change_IM2 (section code_user) (file uncontended.asm:23)
+    G A $005C: _border_Change_uncontended (section code_user) (file uncontended.asm:34)
+    G A $006A: _character_X (section code_user) (file uncontended.asm:72)
+    G A $006B: _character_Y (section code_user) (file uncontended.asm:74)
+    G A $0060: _character_address (section code_user) (file uncontended.asm:44)
+    G A $006C: _copy_memory (section code_user) (file uncontended.asm:82)
+    G A $0004: _dzx0_standard (section code_user) (file zx0_standard.asm:20)
+    G A $0067: _pixel_address (section code_user) (file uncontended.asm:67)
+    G A $0069: _pixel_position (section code_user) (file uncontended.asm:69)
+    G A $0002: _zx0_destination (section code_user) (file zx0_standard.asm:6)
+    G A $0000: _zx0_source (section code_user) (file zx0_standard.asm:2)
+    G A $0000: _xyzzy2 (section rodata_user) (file uncontended.asm:112)
+    G A $0000: _asm_temp (section bss_user) (file uncontended.asm:129)
+  Externs:
+    U         _screen1
+    U         _screen2
+    U         _screen3
+    U         _screen4
+    U         _screen5
+    U         _screen6
+    U         _zx_border_fastcall
+    U         _zx_cls_fastcall
+    U         l_ret
