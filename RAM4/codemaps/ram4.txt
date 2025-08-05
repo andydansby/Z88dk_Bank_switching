@@ -1,0 +1,14 @@
+Object  file ram4.o at $0000: Z80RMF18
+  Name: RAM4
+  CPU:  z80 
+  Section "": 0 bytes
+  Section bss_compiler: 0 bytes
+  Section IGNORE: 0 bytes
+  Section code_crt_init: 0 bytes
+  Section code_home: 0 bytes
+  Section code_compiler: 0 bytes
+  Section BANK_04: 251 bytes
+  Symbols:
+    G A $0000: _RAM4_add_routine (section BANK_04) (file ram4.c:255)
+    G A $00FA: _ram4_end (section BANK_04) (file ram4Z.asm:36)
+    G A $0019: _screen5 (section BANK_04) (file ram4Z.asm:31)
