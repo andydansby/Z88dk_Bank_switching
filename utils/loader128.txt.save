@@ -1,0 +1,49 @@
+**use of VAL "" is a memory savings trick
+
+1 CLEAR VAL "24255": POKE VAL "23739", VAL "111"
+> Removes all variables that have been set and then lowers the stackpointer
+> 23739 $5CBB
+
+2 LOAD""CODE VAL "32768"
+> loads in the Bank Switcher code written by Ast A. Moore
+
+3 FOR N = VAL"1" TO VAL "6"
+> loop read through the data statements to pull up memory banks
+
+4 READ C
+> read data statements
+
+5 POKE VAL "32768", C
+> poke that data statement
+
+6 RANDOMIZE USR VAL "32770"
+> perform the BANK switch
+
+7 LOAD""CODE VAL "49152"
+> load code into the selected bank
+
+8 NEXT N
+> increment the loop
+
+9 DATA VAL "1", VAL "3", VAL "4", VAL "6", VAL "7", VAL "0"
+> which memory bank to load
+> BANK 1, BANK 3, BANK 4, BANK 6, BANK 7 and BANK 0
+
+10 LOAD""CODE VAL "24256"
+> load in contended RAM
+
+20 LOAD""CODE VAL "32768"
+> load in uncontended ram 0
+
+30 LOAD""CODE VAL "48573"
+> load in IM2
+
+40 POKE VAL "23739", VAL "244"
+>
+
+50 RANDOMIZE USR VAL "32768"
+> run the program loaded
+
+
+
+
